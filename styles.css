@@ -1,0 +1,161 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, purple, purple);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    animation: backgroundAnimation 10s ease-in-out infinite;
+  }
+  
+  /* Animate the background gradient for a smooth transition */
+  @keyframes backgroundAnimation {
+    0% {
+      background: linear-gradient(135deg, rgb(209, 132, 145), rgb(209, 132, 145));
+    }
+    50% {
+      background: linear-gradient(135deg, #4e7b8f, #6b9ac4);
+    }
+    100% {
+      background: linear-gradient(135deg, rgb(209, 132, 145), rgb(209, 132, 145));
+    }
+  }
+  
+  /* Main Container */
+  .container {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 2s ease-out;
+  }
+  
+  /* Fade-in animation for the container */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Heading Style */
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    animation: bounceIn 1s ease-in-out;
+  }
+  
+  /* Bounce-in animation for the heading */
+  @keyframes bounceIn {
+    0% {
+      transform: translateY(-50px);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Paragraph Style */
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #e6e6e6;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeIn 3s ease-in-out;
+  }
+  
+  /* Button Style */
+  button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    
+   
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  
+  button:hover {
+    background-color: #ffb900;
+    transform: calc(center);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:active {
+    background-color: #ff9f00;
+    transform: translateY(0);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add a subtle glow effect when the button is focused */
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.7);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+  
+    button {
+      padding: 12px 24px;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  
+    button {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }
+  
